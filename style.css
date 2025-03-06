@@ -1,0 +1,390 @@
+ @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap');
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+ }
+
+ /* reset */
+
+ :root {
+    --primery-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+
+
+ }
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primery-text-color);
+
+
+ }
+
+ h1 {
+    font-size: 2rem;
+
+
+ }
+
+ h2 {
+    font-size: 2rem;
+
+ }
+
+ h3 {
+    font-size: 1.5rem;
+
+ }
+
+ p {
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+
+ }
+
+ a {
+    /* Anchor tag */
+    text-decoration: none;
+    display: inline-block;
+
+
+ }
+
+ ul {
+    list-style: none;
+ }
+
+
+ /* utility classes */
+
+ .small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+ }
+
+ .container {
+    max-width: 1200px;
+    /* iss width se bahar nahi jayega */
+    margin-inline: auto;
+    /* for center */
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden; /* iske use se side empty space nahi aate */
+
+ }
+
+ .flex {
+    /* isse hame bar bar display flex nahi likhna hoga */
+    display: flex;
+    align-items: center;
+ }
+
+ .hover-link {
+
+    color: var(--primery-text-color);
+
+
+ }
+
+ .hover-link:hover {
+    color: var(--accent-color);
+    transition: ease-out;
+
+
+ }
+
+ .primery-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    /* box shadow me first coordinate is x axis and second is y axis */
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.3 ease-out;
+    text-align: center;
+ }
+
+ .primery-button:hover {
+    background-color: var(--accent-color-dark);
+    border-radius: .5px;
+
+ }
+
+ .secondary-button {
+    border: .9px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primery-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+
+ }
+
+ .secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+
+ }
+
+ /* Banner */
+
+ .top-banner {
+    background-image: url(/IMG/Img\ 1.jpg);
+    background-color: #4fb3d4;
+    background-size: 300px;
+
+
+ }
+
+ .banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+ }
+
+ /* navbar */
+
+ .main-nav {
+    margin-top: 20px;
+    /* for space in logo and li */
+    justify-content: space-between;
+    position: relative;
+   
+ }
+
+ .company-logo img {
+   height: 54px;
+   width: 100px;
+ }
+
+ .nav-link {
+    /* from this we can define width */
+    flex-basis: 730px;
+
+ }
+
+
+
+
+ .nav-link ul {
+    /* isse right side me hi align rahe hamesha */
+    justify-content: end;
+    gap: 30px;
+
+ }
+
+ .nav-toggle{
+   display: none;
+ }
+
+ /* Header Section */
+
+ header {
+    padding: 50px var(--padding-inline-section);
+ }
+
+ .header-section {
+    justify-content:flex-start;
+    gap: 50px;
+ }
+
+ .header-left {
+    max-width: 40vw;
+    padding: 0px 100px;
+ }
+
+ .header-right img {
+    width: 100%;
+    
+ }
+
+ .header-left h1 {
+    margin-top: 20px;
+ }
+
+ .get-started-btn {
+    margin: 26px 0px;
+ }
+
+ /* Companies Section */
+
+ .companies-header {
+    text-align: center;
+    /* ye upper and bottom dono se margin de dega */
+    margin-block: 30px;
+    color: var(--primery-text-color);
+
+ }
+
+ .logos {
+    justify-content: space-evenly;
+    /* page small karne par company one by one neeche aata jayega */
+    flex-wrap:wrap;
+    margin: 0px 93px;
+    padding: 0px 16px;
+    gap: 70px;
+    
+ }
+
+
+
+ .logo {
+    height: 65px;
+    width: 65px;
+ }
+
+ /* Features Section */
+
+ .features-section {
+    padding: 80px var(--padding-inline-section) 0px;
+    /* background-image:url(/IMG/gold\ 13.jpg);
+     background-repeat: no-repeat;
+     background-position: center; */
+
+
+ }
+
+ .features-header {
+    text-align: center;
+    margin-bottom: 30px;
+ }
+
+ .features-header h2 {
+    padding: 13px;
+ }
+
+ .featres-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+ }
+
+ .features-card {
+    flex-direction: column;
+    gap: 5px;
+    max-width: 30%;
+    text-align: center;
+ }
+
+ /* big features section */
+ .big-features-section {
+    margin: 74px 0px;
+ }
+
+ .big-feature-container {
+    gap: 100px;
+ }
+
+ .features-discription {
+
+    flex-direction: column;
+    align-items: first start;
+ }
+  #second-big-features{
+   flex-direction: row-reverse;
+  }
+
+ /* examples section */
+
+ .example-header {
+    flex-direction: column;
+
+    gap: 20px;
+ }
+
+ .examples-area {
+    margin-block: 40px;
+    gap: 70px;
+    flex-wrap: wrap;
+ }
+
+ .example-card {
+    width: 25%;
+    position: relative;
+    height: 300px;
+    background: green;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 3)), url(./IMG/photo\ 23.jpg);
+    background-size: cover;
+ }
+    .example-card:hover {
+    box-shadow: 0 0 20px;
+    transition: .5s ease-out;
+   }
+   .example-card:nth-child(2){
+   background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 3)), url(./IMG/Most\ 24.jpg);
+   background-size: cover;
+   }
+   .example-card:nth-child(3) {
+      background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 3)), url(./IMG/BEST\ iPhon\ 25.jpg);
+   background-size: cover;
+
+
+   }
+   .example-card:nth-child(4) {
+      background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 3)), url(./IMG/xyz\ 27.jpg);
+    background-size: cover;
+   }
+
+ .card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+ }
+
+ /* Cta Section */
+
+ .cta-section-container{
+
+   flex-direction: column;
+   gap: 10px;
+   text-align: center;
+   
+ }
+ .cta-section{
+   background-color: #183b56;
+   padding: 100px var(--padding-inline-section) 100px
+ }
+ .cta-section-container p{
+     color: white;
+ }
+ .cta-section-container h2{
+   color: white;
+ }
+ /* footer */
+ 
+ footer{
+   padding: 80px ;
+   background-color: aliceblue;
+ }
+ .link-column{
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
+ }
+ .footer-container{
+   align-items:flex-start ;
+   justify-content: space-between;
+ }
+ /* sub footer */
+
+.subfooter{
+   padding: var(--padding-inline-section);
+   background-color:grey;
+}
+.subfooter-container{
+   justify-content: center;
+   gap: 40px;
+   flex-wrap: wrap;
+}
+
